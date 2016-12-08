@@ -1,11 +1,13 @@
 {
   "name": "basisjs-by-immersion",
-  "version": "1.0.0",
+  "title": "Basisjs Exercises",
   "description": "First steps in basisjs",
-  "main": "index.js",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "basisjs": "^1.10.0"
+  }
 }
