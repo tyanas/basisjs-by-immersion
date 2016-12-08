@@ -7,7 +7,7 @@ module.exports = require('basis.app').create({
     return new Node({
       template: resource('./app/template/layout.tmpl'),
       binding: {
-        //moduleName: resource('./module/moduleName/index.js')
+        page: resource('./module/page/index.js')
       }
     });
   }
