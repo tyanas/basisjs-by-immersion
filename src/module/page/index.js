@@ -36,6 +36,12 @@ var dataSource = new Dataset({
 
 var currentTab = new Value({ value: 'tab3' });
 
+router.add(/^(tab[0-9])/, {
+    match: function(tab) {
+        currentTab.set(tab);
+    }
+});
+
 // TabSheetControl
 var content = new tabs.TabSheetControl({
     dataSource: dataSource,
