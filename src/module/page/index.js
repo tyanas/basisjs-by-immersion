@@ -1,5 +1,6 @@
 var Node = require('basis.ui').Node;
 var tabs = basis.require('basis.ui.tabs');
+var router = require('basis.router');
 
 // borrowed from http://basisjs.com/basisjs/demo/defile/tabs.html
 
@@ -22,6 +23,7 @@ var content = new tabs.TabSheetControl({
                 if (!this.isDisabled()) {
                     this.select();
                     console.log(this);
+                    router.navigate(this.data.title);
                 }
             }
         }
